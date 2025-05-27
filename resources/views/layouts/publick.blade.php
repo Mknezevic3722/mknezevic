@@ -11,24 +11,16 @@
 
 
 
-<nav class="navbar navbar-expand-sm bg-light">
-
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Pocetna</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/o-nama">O nama</a>
-      </li>
-    </ul>
-  </div>
-
-</nav>
+@include("partials.nav")
 
 
 <div class="container">
-  @yield("content")
+    <div class="row">
+
+        <div class="col-sm">
+            @yield("content")
+        </div>
+    </div>
 </div>
 
 
